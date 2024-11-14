@@ -5,16 +5,16 @@ var student = {
 
 document.addEventListener('DOMContentLoaded', contentLoaded);
 
-function contentLoaded(event){
-    document.getElementById('name').addEventListener("keyup", keyUp);
+function contentLoaded(e){
+    document.getElementById("name").addEventListener("keyup", keyUp);
 }
 
-function keyUp(event){
+function keyUp(e){
     calculateNumericInput();
 }
 
 function calculateNumericInput(){
-    student.name = getElementById('name').value;
+    student.name = document.getElementById('name').value;
     var totalNameValue = 0;
     for(var i = 0; i < student.name.length; i++){
         totalNameValue = totalNameValue + student.name.charCodeAt(i);
